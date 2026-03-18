@@ -166,9 +166,11 @@ for (let index = 0; index < 10; index++) {
     while (pattern.length != playerChoices.length) {
         pause(500)
     }
-    game.splash("Nice")
     compare()
     clearChoices()
+    pattern.push(choices._pickRandom())
+    pattern.push(choices._pickRandom())
+    pattern.push(choices._pickRandom())
     pattern.push(choices._pickRandom())
     level += 1
 }
